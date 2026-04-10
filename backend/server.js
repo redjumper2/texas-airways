@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 
 // ── Security ────────────────────────────────────────────────────────────
 app.use(helmet());
-app.use(cors({ origin: ["http://localhost:5173", "http://localhost:3000"], credentials: true }));
+app.use(cors({ origin: ["http://localhost:5173", "http://localhost:3000", "https://texas-airways.vercel.app"], credentials: true }));
 
 // Rate limiting
 const limiter = rateLimit({
